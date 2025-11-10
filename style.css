@@ -12,6 +12,10 @@ html , body{
     height: 100%;
     width: 100%;
 }
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5vw;
+}
 nav{
     position: fixed;
     padding: 0 10vw;
@@ -271,4 +275,125 @@ nav{
 .box:hover{
     box-shadow: .2vw .3vw .6vw black;
     transition: all ease 0.6s;
+}
+
+
+/* Contact Section */
+#contact-page {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 3vw 10vw;
+    background: linear-gradient(180deg, #ffffff, #f1f1f1);
+}
+
+#contact-page h1 {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 200;
+    margin-bottom: 4vw;
+}
+
+#contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5vw;
+}
+
+#contact-left {
+    width: 40%;
+    color: #333;
+}
+
+#contact-left h3 {
+    font-size: 1.8vw;
+    margin-bottom: 1vw;
+}
+
+#contact-left p {
+    font-size: 1.1vw;
+    line-height: 1.8vw;
+    margin-bottom: 1vw;
+}
+
+#contact-left i {
+    color: #ff4d4d;
+    margin-right: 0.5vw;
+}
+
+#contact-right {
+    width: 50%;
+}
+
+#contact-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+#contact-right input,
+#contact-right textarea {
+    width: 100%;
+    padding: 1vw;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1vw;
+    outline: none;
+    transition: 0.3s;
+}
+
+#contact-right input:focus,
+#contact-right textarea:focus {
+    border-color: #ff4d4d;
+}
+
+#contact-right button {
+    width: fit-content;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact-right button:hover {
+    background-color: #e63b3b;
+}
+
+/* Footer Section */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 2vw 10vw;
+}
+
+#footer-content h2 {
+    font-weight: 600;
+    margin-bottom: 1vw;
+}
+
+#footer-content p {
+    font-size: 1vw;
+    color: #bbb;
+}
+
+#footer-icons {
+    margin-top: 1vw;
+    display: flex;
+    justify-content: center;
+    gap: 1.5vw;
+}
+
+#footer-icons i {
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#footer-icons i:hover {
+    color: #ff4d4d;
 }
